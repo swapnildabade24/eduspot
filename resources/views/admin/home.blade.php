@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-	@include('layouts.head')
-</head>
+@extends('layouts.app')
 
 
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-
-	@include('layouts.header')
-
-
-	@include('admin.sidebar')
-
+@section('main_section')
 	<!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  	<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -60,10 +48,5 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-  @include('layouts.footer')
-</div>
-
-
-</body>
-</html>	
+@endsection
+ 
